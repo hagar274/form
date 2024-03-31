@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form action="" id="form">
+        <ul id="person">
+            <li class="active">Personal</li>
+            <li>Contact</li>
+        </ul>
+        
+        <div class="account">
+        <h2 class="title">Personal Informations</h2>
+        <!-- <h3 class="input"></h3> -->
+            <label style="float: left;" for="">Full Name</label>
+            <input type="text" name="name" placeholder="Full Name">
+            <br>
+            <label style="float: left;" for="">Phone</label>
+            <input type="text" name="phone" placeholder="Phone">
+            <br>
+            <label style="float: left;" for="">Address</label>
+            <textarea style="float: left;" name="address">Address</textarea>
+            <br>
+            <label style="float: left;" for="">Birth Date</label>
+            <input type="date" name="date" placeholder="Birth Date"> 
+            <input type="button" name="next" class="Nbutton" value="Next">    
+        </div>
+
+        <div class="account" style="display: none;">
+        <h2 class="title">Create Your Acount</h2>
+            <label style="float: left;" for="">Email</label>
+            <input type="text" name="email" placeholder="Email">
+            <br>
+            <label style="float: left;" for="">Password</label>
+            <input type="password" name="pass" placeholder="Password">
+            <br>
+            <label style="float: left;" for="">Confirm Password</label>
+            <input type="password" name="conpass" placeholder="Confirm Password"> 
+            <input type="button" name="Previous" class="Pbutton" value="Previous"> 
+            <input type="button" name="submit" class="submit" value="Submit">       
+        </div>    
+    </form>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
